@@ -7,6 +7,7 @@ import Roadmap from "../components/Roadmap";
 import EnrollCTA from "../components/EnrollCTA/EnrollCTA";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
+import FAQ from "../components/FAQ";
 
 function Home() {
   return (
@@ -23,7 +24,10 @@ function Home() {
 
       <Roadmap />
 
+      <FAQ />
+      
       <EnrollCTA />
+
 
       <Contact />
 
