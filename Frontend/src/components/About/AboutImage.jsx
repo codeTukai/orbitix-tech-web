@@ -9,7 +9,7 @@ function AboutImage() {
       className="relative"
     >
       <img
-        src="/images/about.jpg"
+        src="/hero.png"
         alt="Orbitix Technology"
         className="rounded-3xl shadow-2xl"
       />
