@@ -14,7 +14,7 @@ function Home() {
     <>
       <Hero />
 
-      <About />
+      <About /> 
 
       <Services />
 
@@ -25,7 +25,7 @@ function Home() {
       <Roadmap />
 
       <FAQ />
-      
+
       <EnrollCTA />
 
 
