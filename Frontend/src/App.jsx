@@ -1,16 +1,16 @@
 
 
-import './App.css'
 
-import Navbar from "./components/Navbar/Navbar";
-import Home from "./pages/Home";
+import './App.css'
+import AppRoutes from './routes/ApiRoutes';
+
 
 function App() {
   return (
     <>
-      <Navbar />
 
-      <Home />
+    <AppRoutes />
+      
     </>
   );
 }
