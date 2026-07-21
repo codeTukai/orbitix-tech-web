@@ -5,7 +5,7 @@ import Pricing from "../components/Pricing";
 import WhyChoose from "../components/WhyChooseUs/WhyChoose";
 import Roadmap from "../components/Roadmap";
 import EnrollCTA from "../components/EnrollCTA/EnrollCTA";
-// import Contact from "../components/Contact/Contact";
+import Contact from "../components/Contact/Contact";
 // import Footer from "../components/Footer/Footer";
 
 function Home() {
@@ -24,6 +24,7 @@ function Home() {
       <Roadmap />
 
       <EnrollCTA />
+      <Contact />
 
       
     </>
