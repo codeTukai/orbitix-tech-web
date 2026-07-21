@@ -6,7 +6,6 @@ import WhyChoose from "../components/WhyChooseUs/WhyChoose";
 import Roadmap from "../components/Roadmap";
 import EnrollCTA from "../components/EnrollCTA/EnrollCTA";
 import Contact from "../components/Contact/Contact";
-import Footer from "../components/Footer/Footer";
 import FAQ from "../components/FAQ";
 
 function Home() {
@@ -31,7 +30,7 @@ function Home() {
 
       <Contact />
 
-      <Footer />
+     
 
       
     </>

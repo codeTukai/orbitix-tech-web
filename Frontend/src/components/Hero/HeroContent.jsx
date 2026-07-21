@@ -8,19 +8,19 @@ function HeroContent() {
       initial={{ opacity: 0, x: -80 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8 }}
-      className="z-10"
+      className="relative z-10"
     >
       {/* Badge */}
-      <div className="inline-flex items-center gap-2 rounded-full bg-blue-100 px-4 py-2 mb-6">
-        <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+      <div className="inline-flex items-center gap-3 rounded-full bg-blue-100/80 backdrop-blur-md px-5 py-2.5 shadow-sm">
+        <span className="w-2.5 h-2.5 rounded-full bg-blue-600 animate-pulse"></span>
 
-        <span className="text-sm font-semibold text-blue-700">
+        <span className="text-sm font-semibold text-blue-700 tracking-wide">
           Building Future with Technology
         </span>
       </div>
 
       {/* Heading */}
-      <h1 className="text-5xl lg:text-7xl font-black leading-tight text-slate-900">
+      <h1 className="mt-8 text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] text-slate-900">
         We Build
         <br />
 
@@ -33,17 +33,21 @@ function HeroContent() {
         Apps & AI
       </h1>
 
-      {/* Paragraph */}
-
-      <p className="mt-8 text-lg text-gray-600 max-w-xl leading-8">
-        Orbitix Technology helps startups, businesses and educational
-        institutions build powerful websites, mobile applications, AI
-        solutions, robotics systems and digital experiences.
+      {/* Description */}
+      <p className="mt-8 max-w-2xl text-lg leading-9 text-slate-600">
+        Orbitix Technology helps startups, businesses, and educational
+        institutions build modern websites, mobile applications, AI-powered
+        solutions, robotics systems, and digital experiences that accelerate
+        growth.
       </p>
 
-      <HeroButtons />
+      <div className="mt-10">
+        <HeroButtons />
+      </div>
 
-      <HeroStats />
+      <div className="mt-14">
+        <HeroStats />
+      </div>
     </motion.div>
   );
 }

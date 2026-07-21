@@ -1,41 +1,33 @@
-import { FaRocket } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
-function Logo() {
+const menuItems = [
+  { name: "Home", path: "/" },
+  { name: "About", path: "/about" },
+  { name: "Services", path: "/services" },
+  { name: "FAQ", path: "/faq" },
+  { name: "Contact", path: "/contact" },
+];
+
+function DesktopMenu() {
   return (
-    <a
-      href="#home"
-      className="flex items-center gap-3"
-    >
-      <div
-        className="
-        w-12
-        h-12
-        rounded-xl
-        bg-gradient-to-r
-        from-blue-600
-        to-cyan-500
-        flex
-        items-center
-        justify-center
-        shadow-lg
-      "
-      >
-        <FaRocket
-          className="text-white text-xl"
-        />
-      </div>
-
-      <div>
-        <h2 className="font-black text-xl">
-          Orbitix
-        </h2>
-
-        <p className="text-sm text-gray-500">
-          Technology
-        </p>
-      </div>
-    </a>
+    <nav className="hidden lg:flex items-center gap-10">
+      {menuItems.map((item) => (
+        <NavLink
+          key={item.name}
+          to={item.path}
+          className={({ isActive }) =>
+            `font-medium transition-colors duration-300 ${
+              isActive
+                ? "text-blue-600"
+                : "text-slate-700 hover:text-blue-600"
+            }`
+          }
+        >
+          {item.name}
+        </NavLink>
+      ))}
+    </nav>
   );
 }
 
-export default Logo;
+export default DesktopMenu;

@@ -1,47 +1,37 @@
-import { motion } from "framer-motion";
-import { navLinks } from "./navLinks";
+import { NavLink } from "react-router-dom";
+
+const menuItems = [
+  { name: "Home", path: "/" },
+  { name: "About", path: "/about" },
+  { name: "Services", path: "/services" },
+  { name: "FAQ", path: "/faq" },
+  { name: "Contact", path: "/contact" },
+];
 
 function MobileMenu({ open, setOpen }) {
   if (!open) return null;
 
   return (
-    <motion.div
-      initial={{
-        opacity: 0,
-        y: -40,
-      }}
-      animate={{
-        opacity: 1,
-        y: 0,
-      }}
-      exit={{
-        opacity: 0,
-      }}
-      className="
-      lg:hidden
-      bg-white
-      shadow-xl
-      rounded-2xl
-      mt-4
-      p-6
-    "
-    >
-      {navLinks.map((item) => (
-        <a
-          key={item.id}
-          href={item.href}
-          onClick={() => setOpen(false)}
-          className="
-          block
-          py-4
-          border-b
-          last:border-none
-        "
-        >
-          {item.name}
-        </a>
-      ))}
-    </motion.div>
+    <div className="lg:hidden bg-white shadow-xl">
+      <div className="flex flex-col p-6 gap-5">
+        {menuItems.map((item) => (
+          <NavLink
+            key={item.name}
+            to={item.path}
+            onClick={() => setOpen(false)}
+            className={({ isActive }) =>
+              `font-medium ${
+                isActive
+                  ? "text-blue-600"
+                  : "text-slate-700"
+              }`
+            }
+          >
+            {item.name}
+          </NavLink>
+        ))}
+      </div>
+    </div>
   );
 }
 
