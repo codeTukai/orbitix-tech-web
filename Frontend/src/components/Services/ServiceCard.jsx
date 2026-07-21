@@ -25,6 +25,7 @@ function ServiceCard({ service, index }) {
       shadow-xl
       p-8"
     >
+      
       <div
         className="absolute inset-0
         opacity-0

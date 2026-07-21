@@ -3,6 +3,9 @@ import About from "../components/About/About";
 import Services from "../components/Services/Services";
 import WhyChoose from "../components/WhyChooseUs/WhyChoose";
 
+import Roadmap from "../components/Roadmap";
+import EnrollCTA from "../components/EnrollCTA/EnrollCTA";
+
 function Home() {
   return (
     <>
@@ -10,6 +13,8 @@ function Home() {
       <About />
       <Services />
       <WhyChoose />
+      <Roadmap />
+      <EnrollCTA />
     </>
   );
 }
