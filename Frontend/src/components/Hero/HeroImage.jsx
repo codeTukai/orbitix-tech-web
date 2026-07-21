@@ -20,7 +20,7 @@ function HeroImage() {
           duration: 6,
           repeat: Infinity,
         }}
-        src="/images/laptop.png"
+        src="/hero.png"
         alt="Laptop"
         className="w-full max-w-2xl drop-shadow-2xl relative z-20"
       />
