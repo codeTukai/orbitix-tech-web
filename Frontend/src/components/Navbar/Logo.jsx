@@ -51,7 +51,7 @@ function Logo() {
           className="
             relative
             z-10
-            h-30
+            h-20
             w-auto
             object-contain
             transition-transform

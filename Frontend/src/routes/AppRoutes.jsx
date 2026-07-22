@@ -10,6 +10,7 @@ import Contact from "../pages/Contact";
 import Portfolio from "../pages/Portfolio";
 import NotFound from "../pages/NotFound";
 import AboutMore from "../pages/AboutMore";
+import ProgramPage from "../pages/ProgramPage";
 
 function AppRoutes() {
   return (
@@ -21,6 +22,8 @@ function AppRoutes() {
         <Route path="/about-more" element={<AboutMore />} />
 
         <Route path="/services" element={<Services />} />
+
+        <Route path="/program" element={<ProgramPage />} />
 
         <Route path="/portfolio" element={<Portfolio />} />
 

@@ -4,6 +4,7 @@ const menuItems = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   { name: "Services", path: "/services" },
+  { name: "Program", path: "/program" },
   { name: "FAQ", path: "/faq" },
   { name: "Contact", path: "/contact" },
 ];
