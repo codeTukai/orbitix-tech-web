@@ -1,64 +1,144 @@
+import { motion } from "framer-motion";
+import { FaArrowRight, FaRocket } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 function FooterTopCTA() {
   return (
-    <section className="mb-20">
-
-      <div
-        className="
-        rounded-3xl
+    <motion.div
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className="
+        relative
+        overflow-hidden
+        rounded-[36px]
         bg-gradient-to-r
         from-blue-700
         via-cyan-600
-        to-blue-500
-        p-10
-        text-center
+        to-indigo-700
+        px-8
+        py-16
+        lg:px-20
+        mb-16
         shadow-2xl
       "
-      >
+    >
+      {/* Decorative Circles */}
 
-        <h2 className="text-4xl font-black text-white">
-          Ready to Build Your Future?
-        </h2>
+      <div className="absolute -top-20 -right-20 w-72 h-72 bg-white/10 rounded-full blur-3xl" />
 
-        <p className="text-blue-100 mt-4 max-w-2xl mx-auto">
-          Join thousands of students learning Website
-          Development, Software Engineering,
-          AI, Robotics and Digital Marketing.
-        </p>
+      <div className="absolute -bottom-24 -left-20 w-80 h-80 bg-cyan-300/10 rounded-full blur-3xl" />
 
-        <div className="flex flex-col md:flex-row gap-4 justify-center mt-8">
+      <div className="relative z-10 grid lg:grid-cols-2 gap-10 items-center">
 
-          <input
-            type="email"
-            placeholder="Enter your Email"
+        {/* Left */}
+
+        <div>
+          <div
             className="
-            md:w-96
-            px-6
-            py-4
-            rounded-xl
-            text-black
-            outline-none
-          "
-          />
-
-          <button
-            className="
-            bg-white
-            text-blue-700
-            font-bold
-            px-8
-            rounded-xl
-            hover:scale-105
-            duration-300
-          "
+              inline-flex
+              items-center
+              gap-2
+              bg-white/20
+              backdrop-blur-md
+              px-5
+              py-2
+              rounded-full
+              text-white
+              mb-6
+            "
           >
-            Enroll Now →
-          </button>
+            <FaRocket />
+
+            <span className="text-sm font-semibold">
+              Let's Build Something Amazing
+            </span>
+          </div>
+
+          <h2
+            className="
+              text-4xl
+              lg:text-5xl
+              font-black
+              text-white
+              leading-tight
+            "
+          >
+            Ready to Grow
+            <br />
+            Your Business?
+          </h2>
+
+          <p
+            className="
+              mt-6
+              text-lg
+              text-blue-100
+              leading-8
+              max-w-xl
+            "
+          >
+            From websites and mobile apps to AI, robotics,
+            software development and digital marketing —
+            Orbitix Technology is your trusted technology partner.
+          </p>
+        </div>
+
+        {/* Right */}
+
+        <div className="flex flex-col sm:flex-row lg:justify-end gap-5">
+
+          <Link
+            to="/contact"
+            className="
+              inline-flex
+              items-center
+              justify-center
+              gap-3
+              bg-white
+              text-blue-700
+              px-8
+              py-4
+              rounded-full
+              font-bold
+              hover:scale-105
+              transition-all
+              duration-300
+              shadow-lg
+            "
+          >
+            Start Your Project
+
+            <FaArrowRight />
+          </Link>
+
+          <Link
+            to="/contact"
+            className="
+              inline-flex
+              items-center
+              justify-center
+              px-8
+              py-4
+              rounded-full
+              border-2
+              border-white
+              text-white
+              font-bold
+              hover:bg-white
+              hover:text-blue-700
+              transition-all
+              duration-300
+            "
+          >
+            Book Free Consultation
+          </Link>
 
         </div>
 
       </div>
-
-    </section>
+    </motion.div>
   );
 }
 

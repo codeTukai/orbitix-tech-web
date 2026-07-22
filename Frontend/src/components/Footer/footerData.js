@@ -3,34 +3,90 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaGithub,
-  FaYoutube,
 } from "react-icons/fa";
 
 export const quickLinks = [
-  "Home",
-  "About",
-  "Services",
-  "Roadmap",
-  "Pricing",
-  "Contact",
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "About",
+    href: "/about",
+  },
+  {
+    name: "Services",
+    href: "/services",
+  },
+  {
+    name: "FAQ",
+    href: "/faq",
+  },
+  {
+    name: "Contact",
+    href: "/contact",
+  },
 ];
 
 export const services = [
-  "Website Development",
-  "Software Development",
-  "Game Development",
-  "Educational Coding",
-  "Robotics & Embedded Systems",
-  "Digital Marketing",
+  {
+    name: "Website Development",
+    href: "#",
+  },
+  {
+    name: "Mobile App Development",
+    href: "#",
+  },
+  {
+    name: "AI Solutions",
+    href: "#",
+  },
+  {
+    name: "Robotics",
+    href: "#",
+  },
+  {
+    name: "Digital Marketing",
+    href: "#",
+  },
 ];
 
 export const programs = [
-  "Foundation Program",
-  "Frontend Development",
-  "Backend Development",
-  "Full Stack Development",
-  "AI & Automation",
-  "Career Support",
+  {
+    name: "Full Stack Development",
+    href: "#",
+  },
+  {
+    name: "Python Programming",
+    href: "#",
+  },
+  {
+    name: "Java Programming",
+    href: "#",
+  },
+  {
+    name: "Artificial Intelligence",
+    href: "#",
+  },
+  {
+    name: "Robotics & IoT",
+    href: "#",
+  },
+];
+
+export const contactInfo = [
+  {
+    title: "Address",
+    value: "Bankura, West Bengal, India",
+  },
+  {
+    title: "Phone",
+    value: "+91 XXXXX XXXXX",
+  },
+  {
+    title: "Email",
+    value: "orbitixtechnology@gmail.com",
+  },
 ];
 
 export const socials = [
@@ -48,10 +104,6 @@ export const socials = [
   },
   {
     icon: FaGithub,
-    url: "#",
-  },
-  {
-    icon: FaYoutube,
     url: "#",
   },
 ];
