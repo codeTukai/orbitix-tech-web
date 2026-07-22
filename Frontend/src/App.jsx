@@ -1,5 +1,5 @@
 import "./App.css";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./components/Scroll/ScrollToTop";
 import AppRoutes from "./routes/AppRoutes";
 
 
