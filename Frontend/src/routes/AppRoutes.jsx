@@ -9,6 +9,7 @@ import FAQ from "../pages/FAQ";
 import Contact from "../pages/Contact";
 import Portfolio from "../pages/Portfolio";
 import NotFound from "../pages/NotFound";
+import AboutMore from "../pages/AboutMore";
 
 function AppRoutes() {
   return (
@@ -17,6 +18,7 @@ function AppRoutes() {
         <Route path="/" element={<Home />} />
 
         <Route path="/about" element={<About />} />
+        <Route path="/about-more" element={<AboutMore />} />
 
         <Route path="/services" element={<Services />} />
 

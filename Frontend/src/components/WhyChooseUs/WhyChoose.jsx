@@ -2,74 +2,70 @@ import WhyImage from "./WhyImage";
 import WhyCard from "./WhyCard";
 import { whyChoose } from "./whyData";
 
-function WhyChoose(){
+function WhyChoose() {
+  return (
+    <section className="relative py-24 lg:py-32 bg-slate-50 overflow-hidden">
 
-return(
+      {/* Background Glow */}
 
-<section className="py-32">
+      <div className="absolute -top-40 -left-40 w-96 h-96 bg-blue-200/30 rounded-full blur-[140px]" />
 
-<div className="container mx-auto px-5">
+      <div className="absolute bottom-0 right-0 w-[28rem] h-[28rem] bg-cyan-200/20 rounded-full blur-[160px]" />
 
-<div className="text-center mb-20">
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
 
-<span className="text-blue-600 font-semibold">
-WHY ORBITIX
-</span>
+        {/* Heading */}
 
-<h2 className="text-5xl font-black mt-5">
+        <div className="text-center max-w-4xl mx-auto mb-20">
 
-Why Choose
+          <span className="inline-block text-blue-600 font-semibold tracking-[0.25em] uppercase">
+            Why Orbitix
+          </span>
 
-<span className="text-blue-600">
- Orbitix Technologies
-</span>
+          <h2 className="mt-6 text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-slate-900">
+            Why Choose
+            <br />
 
-</h2>
+            <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+              Orbitix Technologies
+            </span>
+          </h2>
 
-<p className="text-gray-600 mt-6 max-w-3xl mx-auto">
+          <p className="mt-8 text-lg text-slate-600 leading-8">
+            We combine innovation, creativity and modern technologies to build
+            high-performance digital products that help businesses grow.
+          </p>
 
-We combine creativity, innovation,
-modern technologies and business strategy
-to build powerful digital products.
+        </div>
 
-</p>
+        {/* Content */}
 
-</div>
+        <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-center">
 
-<div className="grid lg:grid-cols-2 gap-20 items-center">
+          {/* Left */}
 
-<WhyImage/>
+          <WhyImage />
 
-<div className="grid gap-6">
+          {/* Right */}
 
-{
+          <div className="space-y-6">
 
-whyChoose.map((item,index)=>(
+            {whyChoose.map((item, index) => (
+              <WhyCard
+                key={item.id}
+                item={item}
+                index={index}
+              />
+            ))}
 
-<WhyCard
+          </div>
 
-key={item.id}
+        </div>
 
-item={item}
+      </div>
 
-index={index}
-
-/>
-
-))
-
-}
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-)
-
+    </section>
+  );
 }
 
 export default WhyChoose;

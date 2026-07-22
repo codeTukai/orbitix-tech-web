@@ -1,56 +1,102 @@
 import { motion } from "framer-motion";
 
-function WhyCard({ item,index }) {
+function WhyCard({ item, index }) {
+  const Icon = item.icon;
 
-const Icon=item.icon;
+  return (
+    <motion.div
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{
+        duration: 0.6,
+        delay: index * 0.15,
+      }}
+      viewport={{ once: true }}
+      whileHover={{
+        y: -8,
+      }}
+      className="
+        group
+        relative
+        flex
+        items-start
+        gap-6
+        rounded-3xl
+        bg-white/90
+        backdrop-blur-xl
+        border
+        border-slate-200
+        p-7
+        shadow-lg
+        transition-all
+        duration-300
+        hover:shadow-2xl
+        hover:border-blue-200
+        overflow-hidden
+      "
+    >
+      {/* Left Accent Line */}
 
-return(
+      <span
+        className="
+          absolute
+          left-0
+          top-0
+          h-full
+          w-1
+          bg-gradient-to-b
+          from-blue-600
+          to-cyan-500
+          scale-y-0
+          origin-top
+          group-hover:scale-y-100
+          transition-transform
+          duration-300
+        "
+      />
 
-<motion.div
+      {/* Icon */}
 
-initial={{opacity:0,x:40}}
-whileInView={{opacity:1,x:0}}
+      <div
+        className="
+          w-16
+          h-16
+          rounded-2xl
+          flex
+          items-center
+          justify-center
+          bg-blue-100
+          transition-all
+          duration-300
+          group-hover:bg-blue-600
+          group-hover:rotate-6
+          group-hover:scale-110
+        "
+      >
+        <Icon
+          size={30}
+          className="
+            text-blue-600
+            transition-all
+            duration-300
+            group-hover:text-white
+          "
+        />
+      </div>
 
-transition={{
-duration:.6,
-delay:index*.1
-}}
+      {/* Content */}
 
-viewport={{once:true}}
+      <div>
+        <h3 className="text-2xl font-bold text-slate-900">
+          {item.title}
+        </h3>
 
-className="flex gap-5
-items-start
-bg-white
-rounded-2xl
-shadow-lg
-p-6
-hover:shadow-2xl
-duration-300"
-
->
-
-<div className="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center">
-
-<Icon className="text-blue-600 text-2xl"/>
-
-</div>
-
-<div>
-
-<h3 className="font-bold text-xl">
-{item.title}
-</h3>
-
-<p className="text-gray-600 mt-2">
-{item.description}
-</p>
-
-</div>
-
-</motion.div>
-
-)
-
+        <p className="mt-3 text-slate-600 leading-7">
+          {item.description}
+        </p>
+      </div>
+    </motion.div>
+  );
 }
 
 export default WhyCard;

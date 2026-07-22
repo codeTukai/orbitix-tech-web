@@ -1,29 +1,33 @@
+import {
+  FaLaptopCode,
+  FaCode,
+  FaRobot,
+  FaBullhorn,
+} from "react-icons/fa6";
+
 export const features = [
   {
-    id: 1,
+    icon: FaLaptopCode,
     title: "Website Development",
     description:
       "Professional websites built with React, Node.js and modern technologies.",
   },
-
   {
-    id: 2,
+    icon: FaCode,
     title: "Software Development",
     description:
-      "Custom software solutions for startups, businesses and enterprises.",
+      "Custom software solutions for startups and enterprises.",
   },
-
   {
-    id: 3,
+    icon: FaRobot,
     title: "AI Solutions",
     description:
-      "AI powered automation, chatbots and business intelligence.",
+      "AI automation, chatbots and intelligent business systems.",
   },
-
   {
-    id: 4,
+    icon: FaBullhorn,
     title: "Digital Marketing",
     description:
-      "SEO, Social Media Marketing and complete branding solutions.",
+      "SEO, social media marketing and complete branding solutions.",
   },
 ];

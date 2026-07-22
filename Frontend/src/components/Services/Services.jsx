@@ -7,6 +7,7 @@ import { services } from "./servicesData";
 function Services() {
   return (
     <section
+    id="services"
       className="relative
       overflow-hidden
       py-32

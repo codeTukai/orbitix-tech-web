@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function AboutContent() {
   return (
@@ -25,9 +26,29 @@ function AboutContent() {
         under one roof.
       </p>
 
-      <button className="mt-10 bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 duration-300">
-        Explore More
-      </button>
+     <Link
+  to="/about-more"
+  className="
+    inline-flex
+    items-center
+    justify-center
+    mt-10
+    px-8
+    py-4
+    rounded-full
+    bg-blue-600
+    text-white
+    font-semibold
+    cursor-pointer
+    transition-all
+    duration-300
+    hover:bg-blue-700
+    hover:scale-105
+    hover:shadow-lg
+  "
+>
+  Explore More
+</Link>
     </motion.div>
   );
 }
