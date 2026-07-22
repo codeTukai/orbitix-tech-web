@@ -5,6 +5,7 @@ import {
   FaWhatsapp,
   FaArrowRight,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function FAQLeft() {
   return (
@@ -73,14 +74,13 @@ function FAQLeft() {
             mb-8
           "
         >
-          Our experts are always ready to help you with website
-          development, software solutions, AI projects, robotics,
-          digital marketing, and coding programs.
+          Our experts are always ready to help you with website development,
+          software solutions, AI projects, robotics, digital marketing, and
+          coding programs.
         </p>
 
         {/* Contact List */}
         <div className="space-y-5">
-
           {/* Phone */}
           <div
             className="
@@ -109,13 +109,9 @@ function FAQLeft() {
             </div>
 
             <div>
-              <h4 className="font-semibold">
-                Phone
-              </h4>
+              <h4 className="font-semibold">Phone</h4>
 
-              <p className="text-blue-100 text-sm">
-                +91 XXXXX XXXXX
-              </p>
+              <p className="text-blue-100 text-sm">+91 XXXXX XXXXX</p>
             </div>
           </div>
 
@@ -147,9 +143,7 @@ function FAQLeft() {
             </div>
 
             <div>
-              <h4 className="font-semibold">
-                Email
-              </h4>
+              <h4 className="font-semibold">Email</h4>
 
               <p className="text-blue-100 text-sm">
                 orbitixtechnology@gmail.com
@@ -185,42 +179,36 @@ function FAQLeft() {
             </div>
 
             <div>
-              <h4 className="font-semibold">
-                WhatsApp
-              </h4>
+              <h4 className="font-semibold">WhatsApp</h4>
 
-              <p className="text-blue-100 text-sm">
-                Chat With Us Anytime
-              </p>
+              <p className="text-blue-100 text-sm">Chat With Us Anytime</p>
             </div>
           </div>
-
         </div>
 
         {/* CTA Button */}
-        <a
-          href="#contact"
+        <Link
+          to="/contact"
           className="
-            mt-10
-            inline-flex
-            items-center
-            gap-3
-            bg-white
-            text-blue-700
-            px-7
-            py-4
-            rounded-2xl
-            font-bold
-            hover:scale-105
-            transition
-            duration-300
-            shadow-xl
-          "
+    mt-10
+    inline-flex
+    items-center
+    gap-3
+    bg-white
+    text-blue-700
+    px-7
+    py-4
+    rounded-2xl
+    font-bold
+    hover:scale-105
+    transition
+    duration-300
+    shadow-xl
+  "
         >
           Contact Us
-
           <FaArrowRight />
-        </a>
+        </Link>
       </div>
     </motion.div>
   );

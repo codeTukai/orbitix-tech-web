@@ -1,6 +1,5 @@
 import FooterLogo from "./FooterLogo";
 import FooterLinks from "./FooterLinks";
-import FooterContact from "./FooterContact";
 import FooterNewsletter from "./FooterNewsletter";
 import FooterBottom from "./FooterBottom";
 
@@ -29,9 +28,7 @@ function FooterCard() {
         {/* Logo */}
 
         <div className="lg:col-span-2">
-
           <FooterLogo />
-
         </div>
 
         {/* Quick Links */}
@@ -57,7 +54,7 @@ function FooterCard() {
 
       </div>
 
-      {/* Middle Section */}
+      {/* Newsletter */}
 
       <div
         className="
@@ -65,13 +62,8 @@ function FooterCard() {
           pt-12
           border-t
           border-gray-200
-          grid
-          lg:grid-cols-2
-          gap-10
         "
       >
-        <FooterContact />
-
         <FooterNewsletter />
       </div>
 
@@ -87,7 +79,6 @@ function FooterCard() {
       >
         <FooterBottom />
       </div>
-
     </div>
   );
 }

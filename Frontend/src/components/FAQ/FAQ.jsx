@@ -7,7 +7,7 @@ function FAQ() {
   return (
     <section
       id="faq"
-      className="relative py-24 bg-gradient-to-b from-slate-50 via-white to-slate-50 overflow-hidden"
+      className="relative py-28 bg-gradient-to-b from-slate-50 via-white to-slate-50 overflow-hidden"
     >
       {/* Background Blur */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-blue-200/20 rounded-full blur-3xl"></div>

@@ -10,18 +10,12 @@ function Logo() {
           items-center
           justify-center
           w-52
-          h-24
+          h-14
           rounded-3xl
-          bg-white/80
-          backdrop-blur-xl
-          border
-          border-white/40
-          shadow-[0_20px_50px_rgba(0,0,0,0.12)]
           transition-all
           duration-500
           group-hover:-translate-y-1
           group-hover:scale-105
-          group-hover:shadow-[0_30px_70px_rgba(37,99,235,0.30)]
           overflow-hidden
         "
       >
@@ -47,9 +41,6 @@ function Logo() {
             -right-10
             w-28
             h-28
-            bg-cyan-400/20
-            rounded-full
-            blur-3xl
           "
         />
 
@@ -60,7 +51,7 @@ function Logo() {
           className="
             relative
             z-10
-            h-20
+            h-30
             w-auto
             object-contain
             transition-transform

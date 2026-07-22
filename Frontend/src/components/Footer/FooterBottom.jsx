@@ -70,9 +70,8 @@ function FooterBottom() {
       >
         <span>Made with</span>
 
-        <FaHeart className="text-red-500 animate-pulse" />
 
-        <span>in India 🇮🇳</span>
+        <span>care in Durgapur, West Bengal</span>
       </div>
     </div>
   );

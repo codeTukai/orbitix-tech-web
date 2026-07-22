@@ -10,7 +10,7 @@ const menuItems = [
 
 function DesktopMenu() {
   return (
-    <nav className="hidden lg:flex items-center gap-10">
+    <nav className="hidden lg:flex items-center gap-7">
       {menuItems.map((item) => (
         <NavLink
           key={item.name}

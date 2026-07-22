@@ -27,10 +27,10 @@ function Navbar() {
         top-0
         left-0
         w-full
-        z-50
+        z-30
         transition-all
         duration-500
-        ${scrolled ? "pt-4" : "pt-0"}
+        ${scrolled ? "pt-3" : "pt-0"}
       `}
     >
       <div
@@ -46,8 +46,8 @@ function Navbar() {
           ${
             scrolled
               ? `
-                px-8
-                py-4
+                px-6
+                py-2.5
                 rounded-full
                 bg-white/20
                 backdrop-blur-2xl
@@ -56,7 +56,7 @@ function Navbar() {
               `
               : `
                 px-6
-                py-6
+                py-4
               `
           }
         `}
@@ -69,8 +69,9 @@ function Navbar() {
           className="
             hidden
             lg:block
-            px-7
-            py-3
+            px-5
+            py-2.5
+            text-sm
             rounded-full
             bg-gradient-to-r
             from-blue-600
