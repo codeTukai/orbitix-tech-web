@@ -20,9 +20,9 @@ function HeroImage() {
           duration: 6,
           repeat: Infinity,
         }}
-        src="/hero.png"
+        src="/laptop.png"
         alt="Laptop"
-        className="w-full max-w-2xl drop-shadow-2xl relative z-20"
+        className="w-full max-w-6xl drop-shadow-2xl relative z-20"
       />
 
       {/* Floating Cards */}

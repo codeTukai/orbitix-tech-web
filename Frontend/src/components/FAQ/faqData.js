@@ -38,14 +38,14 @@ export const faqs = [
     id: 6,
     question: "How much does a website cost?",
     answer:
-      "Website pricing depends on project requirements. Basic packages start from ₹399, while custom business solutions are quoted based on features."
+      "Website pricing depends on project requirements. Basic packages start from ₹3999, while custom business solutions are quoted based on features."
   },
 
   {
     id: 7,
     question: "Do you provide support after delivery?",
     answer:
-      "Yes. We provide technical support, maintenance, bug fixing and future upgrades."
+      "Yes. We provide technical support, maintenance, bug fixing."
   },
 
   {

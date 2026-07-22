@@ -11,7 +11,7 @@ function WhyImage() {
       className="relative"
     >
       <motion.img
-        
+        src="/team.png"
         alt="Orbitix Technology Team"
         className="
           w-full
@@ -35,7 +35,7 @@ function WhyImage() {
           z-20
         "
       >
-        <h2 className="text-5xl font-black text-blue-700">
+        <h2 className="text-5xl font-black text-blue-600">
   100+
 </h2>
 
